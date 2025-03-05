@@ -8,7 +8,10 @@
 #set text(lang: "sv")
 #show heading.where(level: 1): text.with(size: 1.4em)
 #show heading.where(level: 2): text.with(size: 1.2em)
-#show heading.where(level: 1): it => { pagebreak(weak: true); it }
+#show heading.where(level: 1): it => {
+  pagebreak(weak: true)
+  it
+}
 
 #grid(
   columns: 1fr, rows: (3fr, 6fr, 5fr),
@@ -318,7 +321,10 @@ tävlingen.
 + Korsningar skall alltid vara vinkelräta och kan antingen ha 3 eller 4 grenar.
 + Korsningsmarkeringar skall förekomma i anslutning till korsningen. Nedan
   följer bilder på samtliga möjliga scenarion.
-#figure(caption: [Korsningsmöjligheter],[#image("images/ex-korsning.png"), #image("images/ex-korsning2.png")])<ex-korsningar>
+#figure(
+  caption: [Korsningsmöjligheter],
+  [#image("images/ex-korsning.png"), #image("images/ex-korsning2.png")],
+)<ex-korsningar>
 
 
 == Ramper
@@ -366,7 +372,8 @@ tävlingen.
 
 == Offer
 + Offer får förekomma var som helst inom Räddningsplatsen.
-+ Offer representeras av en kula på en diameter mellan 4-5 cm med #reformulation([en tyngdpunkt i botten av kulan]) och får max väga 80 g.
++ Offer representeras av en kula på en diameter mellan 4-5 cm med
+  #reformulation([en tyngdpunkt i botten av kulan]) och får max väga 80 g.
 + Det finns två typer av offer:
   - Döda offer är svarta och leder ej elektricitet.
   - Levande offer är silvriga, reflektiva och leder elektricitet.
@@ -385,8 +392,23 @@ tävlingen.
 
 
 = Roboten
-== Termer och definitioner
-// TODO: FIX FORTSÄTT HÄR!
+== #new_rule([Begrepp och definitioner])
++ *Verktyg:* Begreppet "verktyg" är omfattande och innefattar både hårdvaru-
+  och mjukvarukomponenter som är nödvändiga för funktionen av roboten. Verktyg
+  innefattar allt från sensorer till algoritmer.
++ *Kalibrering:* Processen då ett lag ingriper för att justera inställningarna
+  på ett verktyg.
++ *Utveckling:* Aktiviteter som är ämnade att skapa nya lösningar, teknologier
+  eller system; samt utöka förmågan på existerande lösningar, teknologier eller
+  system. Kalibrering anses inte vara Utveckling.
++ Verktyg är tillåtna så länge de är utvecklade av laget eller när de inte
+  kan slutföra en uppgift, eller en del av en uppgift, som gör det möjligt för
+  roboten att tjäna poäng utan vidare utveckling (t.ex. färgsensorer, kameror
+  eller bibliotek som är nödvändiga för sensorersfunktion).
++ Verktyg som inte är utvecklade av laget och som kan slutföra en uppgift, eller
+  en del av en uppgift som gör det möjligt för roboten att tjäna poäng utan
+  vidare utveckling (t.ex. linjeföljningssensorer, AI-kameror, OCR-bibliotek)
+  är förbjudna.
 
 == Kontroll
 + Robotarna skall autonomt navigera genom banan. Att på något sätt manuellt
@@ -425,6 +447,7 @@ tävlingen.
   skall kunna användas av domaren vid Lack of Progress. Lag skall informera
   domaren om deras Lack of Progress procedur innan start av ett poänglopp och bara
   den visade proceduren är tillåten.
++ #new_rule([Drönare och svävare är förbjudna.])
 
 == Laget
 + Varje lag får bara ha en robot på banan.
@@ -435,24 +458,8 @@ tävlingen.
 + Varje medlem inom lagen får bara vara registrerade till ett lag.
 + Ett lag får bara tävla inom en gren.
 + –
-+ Mentorer:e Varje lag måste ha minst en mentor registrerad och som deltar på
-tävlingen.r får inte vara med lagmedlemmarna under tävlingen. Lagmedlemmarna
-=== Ålderskrav
-*Lagmedlemmar:* Tävlande får inte vara mer än 19 år gammal det året de tävlar.
-//TODO: FIX Ta upp på möte och bestäm vår formulering.
-
-=== Lagmedlemmar
-*Tekniska roller:* Alla lagmedlemmar ska ha en teknisk roll (mekanik, design, elektronik, mjukvara osv.) och ska kunna förklara sin roll till en domare. //TODO: FIX Vill vi ha detta på SM?
-
-skall utan mentorer:e Varje lag måste ha minst en mentor registrerad och som
-deltar på tävlingen.rs stöd kunna delta i tävlingen.
-
-=== Ålderskrav
-*Lagmedlemmar:* Tävlande får inte vara mer än 19 år gammal det året de tävlar.
-//TODO: FIX Ta upp på möte och bestäm vår formulering.
-
-=== Lagmedlemmar
-*Tekniska roller:* Alla lagmedlemmar ska ha en teknisk roll (mekanik, design, elektronik, mjukvara osv.) och ska kunna förklara sin roll till en domare. //TODO: FIX Vill vi ha detta på SM?
++ Mentorer får inte vara med lagmedlemmarna under tävlingen. Lagmedlemmarna
+  skall utan mentorers stöd kunna delta i tävlingen.
 
 == Inspektion
 + En panel av domare skall innan starten av tävlingen granska robotarna för att
@@ -478,17 +485,10 @@ deltar på tävlingen.rs stöd kunna delta i tävlingen.
 + Lagets modifikationer får ej fördröja deras utsatta start tid.
 + Om ett lag ej har en tillåten robot vid deras starttid skall de
   diskvalificeras från den specifika starten.
-+ Ingen hjälp från mentorer:e Varje lag måste ha minst en mentor registrerad och
-som deltar på tävlingen.r är tillåten under tävlingen.
-+ Alla regelbrott kan leda till diskvalificering från tävlingen, en omgång eller
-=== Ålderskrav
-*Lagmedlemmar:* Tävlande får inte vara mer än 19 år gammal det året de tävlar.
-//TODO: FIX Ta upp på möte och bestäm vår formulering.
-
-=== Lagmedlemmar
-*Tekniska roller:* Alla lagmedlemmar ska ha en teknisk roll (mekanik, design, elektronik, mjukvara osv.) och ska kunna förklara sin roll till en domare. //TODO: FIX Vill vi ha detta på SM?
-
-poängavdrag dessa beslutas av domaren
++ Ingen hjälp från mentorer är tillåten under tävlingen.
++ Alla regelbrott kan leda till diskvalificering från tävlingen,
+  #reformulation([diskvalificering från]) en omgång eller poängavdrag dessa
+  beslutas av #new_rule([huvuddomaren]).
 
 
 = Omgångar
@@ -511,7 +511,6 @@ poängavdrag dessa beslutas av domaren
   information om banan i form av var hinder befinner sig.
 
 == Omgångar
-+ \_-\_-
 + Varje lag har som mest 8 minuter per omgång på sig. Detta inkluderar både
   kalibrering och poängloppet.
 + Kalibrering innebär att kontrollera sensoravläsningar för att sedan kunna
@@ -530,7 +529,6 @@ poängavdrag dessa beslutas av domaren
   som körs vid start av ett poänglopp skall användas resten av omgången.
 + Det är laget som väljer om de vill kalibrera eller ej, ett lag får starta ett
   poänglopp utan att ha kalibrerat.
-+ _-_-
 + Brickor, hinder och andra poängelement får av domaren plockas bort, läggas
   till eller ändras när roboten väl har startat sitt poänglopp; det kan göras
   för att förhindra laget från kartläggning av banan. Dessa förändringar skall
@@ -574,7 +572,6 @@ poängavdrag dessa beslutas av domaren
   skall placeras där roboten befinner sig. Om Lack of Progress sker då roboten
   lämnar Räddningsplatsen samt bär på offer skall de placeras på ett slumpmässigt
   sätt inom Räddningsplatsen.
-+ _-_-
 + Vid Lack of Progress skall samtliga gungbrädor återställas så att roboten kan
   navigera dessa.
 
@@ -612,7 +609,6 @@ poängavdrag dessa beslutas av domaren
   följande:
   - (EZLP) = -0,050x per antalet Lack of Progress inom Räddningsplatsen.
 + En multiplikator som fåtts för en SVR kan aldrig bli mindre än 1,25.
-+ _-_-
 + En slutbonus fås om man når slut brickan och stannar och står stilla i minst
   5 sekunder, om omgångens slut hinner ske innan roboten ha stått stilla i 5
   sekunder ges ingen poäng. Slutbonusen är en icke negativ siffra som fås av
@@ -634,13 +630,22 @@ poängavdrag dessa beslutas av domaren
 
 = RobocupJunior Sverige
 == Rundor & Poäng
++ #na
++ #na
++ #na
++ #na
++ #na
++ #na
++ #na
 + I fall där 2 eller flera lag har samma slut poäng skall detta avgöras genom
   att jämföra omgångstiderna om dessa inte avgör det skall vinnande lag slumpas
   fram.
 
+== #na
+== #na
 
 = Open Technical Evaluation
-Detta är något som inte genomförs i Sverige
+Detta är något som inte genomförs i Sverige.
 
 
 = Konflikthantering
