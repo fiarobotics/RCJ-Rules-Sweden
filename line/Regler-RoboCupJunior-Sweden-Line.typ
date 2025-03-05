@@ -630,7 +630,7 @@ tävlingen.
 
 = RobocupJunior Sverige
 == Rundor & Poäng
-+ #na
++ #na//TODO: FIX hur gör vi här för
 + #na
 + #na
 + #na
