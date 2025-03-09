@@ -1,4 +1,4 @@
-#let local_change(x) = skew(ax: -12deg)[#x]
+#let local_change(x) = emph([#x])
 #let new_rule(x) = underline([#x])
 #let reformulation(x) = highlight(fill: gray, [#x])
 #let rule_removed = [\_-\_-]
@@ -15,7 +15,8 @@
 
 #grid(
   columns: 1fr, rows: (3fr, 6fr, 5fr),
-  [
+  [#let local_change(x) = skew(ax: -12deg)[#x]
+
     #align(center, image("images/fia-logga.png", height: 6.0cm))],
   [
     #align(
@@ -58,7 +59,8 @@ ska behålla samma numrering av reglerna som de internationella reglerna.
 = Scenario
 Området är för farligt för att människor ska kunna hjälpa till. Ert lag
 har givits uppgiften att rädda dagen! Er robot skall kunna utföra ett
-räddningsuppdrag fullständigt autonomt utan utomstående hjälp. Roboten
+räddningsuppdrag fullständigt autonomt uta#let local_change(x) = skew(ax: -12deg)[#x]
+n utomstående hjälp. Roboten
 måste vara tillräckligt hållbar och intelligent för att ta sig igenom den
 farliga terrängen och rädda människorna. När roboten når ett offer skall den
 försiktigt kunna transportera tillbaka denne till en evakueringsplats. Roboten
@@ -122,7 +124,7 @@ sedan lämna Räddningsplatsen och forsätta navigera banan.
 
 #set heading(numbering: "1.")
 
-= #new_rule([RoboCupJunior Sverige 2025 Generella Regler])
+= #new_rule([Generella Regler])
 == Lagkrav
 === Lag Storlek
 
@@ -130,15 +132,13 @@ sedan lämna Räddningsplatsen och forsätta navigera banan.
 
 *Största storlek:* #na
 
-*Delade medlemmar och robotar:* Inga robotar får delas mellan lagen, man får dock
-tävla i flera lag.
+*Delade medlemmar och robotar:* Inga robotar får delas mellan lagen, #local_change([man får dock tävla i flera lag]).
 
-*Mentorer:* Varje lag måste ha minst en mentor registrerad och som deltar på
-tävlingen.
+*Mentorer:* Varje lag måste ha minst en mentor registrerad och deltagande på tävlingen.
 
 === Ålderskrav
 
-*Lagmedlemmar:* Tävlande får inte vara mer än 19 år gammal det året de tävlar.
+*Lagmedlemmar:* #local_change([Tävlande får inte vara mer än 19 år gammal det året de tävlar.])
 //TODO: FIX Ta upp på möte och bestäm vår formulering.
 
 === Lagmedlemmar

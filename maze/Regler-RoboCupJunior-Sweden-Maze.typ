@@ -1,4 +1,4 @@
-#let local_change(x) = skew(ax: -12deg)[#x]
+#let local_change(x) = emph([#x])
 #let new_rule(x) = underline([#x])
 #let reformulation(x) = highlight(fill: gray, [#x])
 #let rule_removed = [\_-\_-]
@@ -109,7 +109,7 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
 
 #set heading(numbering: "1.")
 
-= #new_rule([RoboCupJunior Sverige 2025 Generella Regler])
+= #new_rule([Generella Regler])
 == Lagkrav
 === Lag Storlek
 
@@ -117,15 +117,13 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
 
 *Största storlek:* #na
 
-*Delade medlemmar och robotar:* Inga robotar får delas mellan lagen, man får dock
-tävla i flera lag.
+*Delade medlemmar och robotar:* Inga robotar får delas mellan lagen, #local_change([man får dock tävla i flera lag]).
 
-*Mentorer:* Varje lag måste ha minst en mentor registrerad och som deltar på
-tävlingen.
+*Mentorer:* Varje lag måste ha minst en mentor registrerad och deltagande på tävlingen.
 
 === Ålderskrav
 
-*Lagmedlemmar:* Tävlande får inte vara mer än 19 år gammal det året de tävlar.
+*Lagmedlemmar:* #local_change([Tävlande får inte vara mer än 19 år gammal det året de tävlar.])
 //TODO: FIX Ta upp på möte och bestäm vår formulering.
 
 === Lagmedlemmar
