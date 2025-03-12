@@ -1,6 +1,6 @@
-#let local_change(x) = emph([#x])
-#let new_rule(x) = underline([#x])
-#let reformulation(x) = highlight(fill: gray, [#x])
+#let local_change(x) = emph(x)
+#let new_rule(x) = underline(x)
+#let reformulation(x) = highlight(fill: gray, x)
 #let rule_removed = [\_-\_-]
 #let not_applicable = [—]
 #let na = not_applicable
@@ -12,6 +12,7 @@
   pagebreak(weak: true)
   it
 }
+#set enum(numbering: "1.a.i.")
 
 #grid(
   columns: 1fr, rows: (3fr, 6fr, 5fr),
@@ -59,14 +60,12 @@ ska behålla samma numrering av reglerna som de internationella reglerna.
 = Scenario
 Området är för farligt för att människor ska kunna hjälpa till. Ert lag
 har givits uppgiften att rädda dagen! Er robot skall kunna utföra ett
-räddningsuppdrag fullständigt autonomt uta#let local_change(x) = skew(ax: -12deg)[#x]
-n utomstående hjälp. Roboten
+räddningsuppdrag fullständigt autonomt utan utomstående hjälp. Roboten
 måste vara tillräckligt hållbar och intelligent för att ta sig igenom den
 farliga terrängen och rädda människorna. När roboten når ett offer skall den
 försiktigt kunna transportera tillbaka denne till en evakueringsplats. Roboten
 skall efter detta kunna återgå till olycksplatsen för att kunna fortsätta
-räddningsuppdraget.
-Tiden är livsviktig!
+räddningsuppdraget. Tiden är livsviktig!
 
 Lycka till.
 
@@ -132,18 +131,17 @@ sedan lämna Räddningsplatsen och forsätta navigera banan.
 
 *Största storlek:* #na
 
-*Delade medlemmar och robotar:* Inga robotar får delas mellan lagen, #local_change([man får dock tävla i flera lag]).
+*Delade medlemmar och robotar:* Inga robotar får delas mellan lagen,#local_change(" man får dock tävla i flera lag").
 
 *Mentorer:* Varje lag måste ha minst en mentor registrerad och deltagande på tävlingen.
 
 === Ålderskrav
 
-*Lagmedlemmar:* #local_change([Tävlande får inte vara mer än 19 år gammal det året de tävlar.])
-//TODO: FIX Ta upp på möte och bestäm vår formulering.
+*Lagmedlemmar:* #local_change([Tävlande får inte vara mer än 19 år gammal på den 1 Juli det året de tävlar.])
 
 === Lagmedlemmar
 
-*Tekniska roller:* Alla lagmedlemmar ska ha en teknisk roll (mekanik, design, elektronik, mjukvara osv.) och ska kunna förklara sin roll till en domare. //TODO: FIX Vill vi ha detta på SM?
+*Tekniska roller:* Alla lagmedlemmar ska ha en teknisk roll (mekanik, design, elektronik, mjukvara osv.) och ska kunna förklara sin roll till en domare. 
 
 
 == Robotkrav
@@ -630,7 +628,7 @@ sedan lämna Räddningsplatsen och forsätta navigera banan.
 
 = RobocupJunior Sverige
 == Rundor & Poäng
-+ #na//TODO: FIX hur gör vi här för
++ #na
 + #na
 + #na
 + #na

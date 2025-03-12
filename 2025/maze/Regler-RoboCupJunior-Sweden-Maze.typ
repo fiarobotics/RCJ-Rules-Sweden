@@ -1,4 +1,4 @@
-#let local_change(x) = emph([#x])
+#let local_change(x) = emph(x)
 #let new_rule(x) = underline([#x])
 #let reformulation(x) = highlight(fill: gray, [#x])
 #let rule_removed = [\_-\_-]
@@ -123,13 +123,11 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
 
 === Ålderskrav
 
-*Lagmedlemmar:* #local_change([Tävlande får inte vara mer än 19 år gammal det året de tävlar.])
-//TODO: FIX Ta upp på möte och bestäm vår formulering.
+*Lagmedlemmar:* #local_change([Tävlande får inte vara mer än 19 år gammal på den 1 Juli det året de tävlar.])
 
 === Lagmedlemmar
 
-*Tekniska roller:* Alla lagmedlemmar ska ha en teknisk roll (mekanik, design, elektronik, mjukvara osv.) och ska kunna förklara sin roll till en domare. //TODO: FIX Vill vi ha detta på SM?
-
+*Tekniska roller:* Alla lagmedlemmar ska ha en teknisk roll (mekanik, design, elektronik, mjukvara osv.) och ska kunna förklara sin roll till en domare. 
 
 == Robotkrav
 === Robotens kommunikation
@@ -650,7 +648,7 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
 
 = RobocupJunior Sverige
 == Rundor & Poäng
-+ #na //TODO: FIX hur gör vi här för
++ #na 
 + #na
 + #na
 + #na
