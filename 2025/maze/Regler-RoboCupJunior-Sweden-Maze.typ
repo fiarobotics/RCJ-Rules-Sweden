@@ -33,7 +33,7 @@
 )
 
 #set page(
-  header: image("./images/fia-header.png", height: 80%), // TODO: FIX logga
+  header: image("./images/fia-header.png", height: 80%), 
   footer: context [Publicerad: #datetime.today().display() #h(1fr) #counter(page).display("1/1", both: true)],
 )
 

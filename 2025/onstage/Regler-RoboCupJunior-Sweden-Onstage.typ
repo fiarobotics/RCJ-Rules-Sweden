@@ -36,7 +36,7 @@
 )
 
 #set page(
-  header: image("./images/fia-header.png", height: 80%), // TODO: FIX logga
+  header: image("./images/fia-header.png", height: 80%),
   footer: context [Publicerad: #datetime.today().display() #h(1fr) #counter(page).display("1/1", both: true)],
 )
 
@@ -84,6 +84,15 @@ Varje lagmedlem skall även kunna visa en förståelse för sina respektive omr�
 
 Lycka till!
 
+#h(5fr) // Slight padding
+#figure(
+  stack(
+      dir: ltr,       // left-to-right
+      spacing: 2mm,   // space between contents
+      image("images/ex1.jpg", width: 50%),
+      image("images/ex2.jpg", width: 50%),
+  ),
+)
 
 = #new_rule([Generella Regler])
 == Lagkrav
@@ -99,14 +108,13 @@ Lycka till!
 
 === Ålderskrav
 
-*Lagmedlemmar:* #local_change([Tävlande får inte vara mer än 19 år gammal det året de tävlar.])
-//TODO: FIX Ta upp på möte och bestäm vår formulering.
+*Lagmedlemmar:* #local_change([Tävlande får inte vara mer än 19 år gammal på den 1 Juli det året de tävlar.])
 
 === Lagmedlemmar
 
 *Ingångsligor*: #na
 
-*Tekniska roller:* Alla lagmedlemmar ska ha en teknisk roll (mekanik, design, elektronik, mjukvara osv.) och ska kunna förklara sin roll till en domare. //TODO: FIX Vill vi ha detta på SM? "Huvudansvar för en av robotens (eller föreställningens i OnStage) aspekter"
+*Tekniska roller:* Alla lagmedlemmar ska ha en teknisk roll (mekanik, design, elektronik, mjukvara osv.) och ska kunna förklara sin roll till en domare. 
 
 
 == Robotkrav
