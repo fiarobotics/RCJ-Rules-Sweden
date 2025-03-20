@@ -24,7 +24,7 @@
       center,
       text(30pt)[
         Regler \
-        RoboCupJunior Rescue Line 2025
+        RoboCup Junior Rescue Line 2025
       ],
     )
   ],

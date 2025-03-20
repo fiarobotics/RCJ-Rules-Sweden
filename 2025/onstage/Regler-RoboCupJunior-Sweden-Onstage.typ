@@ -26,7 +26,7 @@
       center,
       text(30pt)[
         Regler \
-        RoboCupJunior OnStage 2025
+        RoboCup Junior OnStage 2025
       ],
     )
   ],
