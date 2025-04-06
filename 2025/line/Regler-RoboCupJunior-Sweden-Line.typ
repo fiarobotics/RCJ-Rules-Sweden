@@ -105,7 +105,7 @@ Om det tar mer än tre försök att nå nästa kontrollpunkt så utdelas 0 poän
 Om en robot fastnar, kan den startas om på den senaste besökta kontrollpunkten.
 Längs med banan så kommer det att finnas en evakueringsplats, som innehåller
 en evakueringspunkt. Räddningsplatsen kommer att ha en ingång som är markerat
-med en reflektiv silverfärgad tejp och en utgång som är markerat med en grön
+med en reflektiv silverfärgad tejp och en utgång som är markerat med en svart
 tejp, dessa kommer att vara tejpade på brickan. Inom Räddningsplatsen så kan det
 förekomma hinder, hinder i Räddningsplatsen ger inga poäng.
 
