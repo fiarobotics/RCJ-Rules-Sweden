@@ -12,4 +12,4 @@ The rules for previous years can be found in the respective folders.
 
 The rules are updated yearly upon release of the new rules from the RoboCup Junior International. Work-in-progress translations can occasionally be found in a separate branch.
 
-For more information about RoboCup Junior Sweden, visit [robocupjunior.se](https://robocupjunior.se).
+For more information about RoboCup Junior Sweden, visit [robocup.se](https://robocup.se).
