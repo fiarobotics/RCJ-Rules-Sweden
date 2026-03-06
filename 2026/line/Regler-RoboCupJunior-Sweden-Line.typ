@@ -24,7 +24,7 @@
       center,
       text(30pt)[
         Regler \
-        RoboCup Junior Rescue Line 2025
+        RoboCup Junior Rescue Line 2026
       ],
     )
   ],
@@ -89,7 +89,7 @@ Lagen får poäng på följande sätt:
 20 poäng för att ta sig förbi ett hinder.\
 10 poäng för att hitta linjen igen efter en bricka med ett eller flera gap
 i linjen.\
-10 poäng #new_rule([för varje lyckad navigering av en ramp bricka.])\
+10 poäng för varje lyckad navigering av en ramp bricka.\
 10 poäng för att lyckas ta sig förbi ett farthinder.
 
 Varje gång en robot tar sig till en kontrollpunkt får den poäng på följande sätt:
@@ -123,7 +123,7 @@ sedan lämna Räddningsplatsen och forsätta navigera banan.
 
 #set heading(numbering: "1.")
 
-= #new_rule([Generella Regler])
+= Generella Regler
 == Lagkrav
 === Lag Storlek
 
@@ -141,7 +141,7 @@ sedan lämna Räddningsplatsen och forsätta navigera banan.
 
 === Lagmedlemmar
 
-*Tekniska roller:* Alla lagmedlemmar ska ha en teknisk roll (mekanik, design, elektronik, mjukvara osv.) och ska kunna förklara sin roll till en domare. 
+*Tekniska roller:* Alla lagmedlemmar ska ha en teknisk roll (mekanik, design, elektronik, mjukvara osv.) och ska kunna förklara sin roll till en domare.
 
 
 == Robotkrav
@@ -216,7 +216,7 @@ sedan lämna Räddningsplatsen och forsätta navigera banan.
 + Robotarna skall vara ett projekt genomfört av lagmedlemmarna.
 
 == Värderingar och Integritet
-+ Fusk och #reformulation([olämpligt]) uppträdande tolereras inte. Två exempel på fusk är:
++ Fusk och olämpligt uppträdande tolereras inte. Två exempel på fusk är:
   - Mentorer som arbetar på de tävlandes mjukvara eller hårdvara under tävlingen.
   - Mer erfarna tävlande arbetar på annat lags robot. Det är dock tillåtet att
     ge andra lag råd.
@@ -241,30 +241,29 @@ sedan lämna Räddningsplatsen och forsätta navigera banan.
 == Beskrivning
 + Banan skall vara uppbyggd av modulära brickor.
 + De modulära brickorna skall vara 30x30 cm. Brickornas placering, antal och typ
-  skall göras tillgänglig på tävlingsdagen, och inte innan. #new_rule([Brickorna
-  kan monteras på valfritt hårt underlag.])
+  skall göras tillgänglig på tävlingsdagen, och inte innan. Brickorna
+  kan monteras på valfritt hårt underlag.
 + Banorna kommer att bestå av minst 8 st brickor, utan att räkna start- och
   slutbrickan.
 + Linjerna på brickorna kan ha en stor variation, några exempel på olika typer
   finns vid @ex-brickor.
 
 == Underlaget
-+ Underlaget #reformulation([skall]) vara vitt till färg och kan vara både jämnt
++ Underlaget skall vara vitt till färg och kan vara både jämnt
   och ojämnt. Mellan brickorna får det vara upp till en glipa på 3 mm.
   Det får uppkomma små höjdskillnader mellan brickorna.
 + Ramperna som förekommer på banan skall ha en lutning under 25 grader.
 + På banan får det förekomma broundergångar. En bricka som utformar en bro skall
   ha ett stödben per hörn på brickan vilka skall placeras i varje hörn. Stödbenen
-  skall vara 2,5x2,5 cm och det skall vara en bredd på 25 cm och en minsta höjd på
-  25 cm vid broundergångar.
+  skall vara #reformulation([maximalt]) 2,5x2,5 cm och det skall vara en bredd på #reformulation([åtminstone]) 25 cm och en minsta höjd på 25 cm vid broundergångar.
 
 == Linjerna
 + Den svarta linjen skall vara mellan 1 och 2 cm bred och får bestå av eltejp,
-  vara utskrivet på papper eller #reformulation([andra liknande material]). Den
+  vara utskrivet på papper eller andra liknande material. Den
   svarta linjen bildar en väg genom banan.
-+ Vid förekomst av #reformulation([mellanrum]) i linjen som roboten ska
++ Vid förekomst av mellanrum i linjen som roboten ska
   ta sig över, så skall det finnas en 5 cm rak svart linje innan och efter
-  mellanrummet. #reformulation([mellanrum]) i linjen får ej överstiga 20 cm
+  mellanrummet. Mellanrum i linjen får ej överstiga 20 cm
   i längd.
 + Upplägget av brickor och banor kan ändras mellan rundorna.
 + Det ska vara minst 10 cm mellan linjen och banans kanter, väggar, stödben och
@@ -283,17 +282,17 @@ sedan lämna Räddningsplatsen och forsätta navigera banan.
   of Progress har angivits, se @lop.
 + Kontrollpunkter får inte förekomma på brickor som man kan ta poäng på.
 + Startbrickan är en kontrollpunkt.
-+ Kontrollpunkterna ska vara uppmarkerade på ett sådant sätt #reformulation([så
-  att]) det är tydligt för deltagare och domare.
++ Kontrollpunkterna ska vara uppmarkerade på ett sådant sätt så
+  att det är tydligt för deltagare och domare.
 + Kontrollpunkternas antal och position bestäms då banan byggs och lagkaptenen
   skall vara informerad om dessa innan start av roboten.
 
 == Farthinder, spillror och hinder
-+ #new_rule([Farthinder får ej vara större än en bricka samt]) får vara högst
++ Farthinder får ej vara större än en bricka samt får vara högst
   1 cm höga, de skall vara av samma färg som underlaget samt vara fastsatta
   i underlaget.
-+ #new_rule([Farthinder får placeras vart som helst inom Räddningsplatsen.
-    Farthinder i Räddningsplatsen ger inga poäng.])
++ Farthinder får placeras vart som helst inom Räddningsplatsen.
+    Farthinder i Räddningsplatsen ger inga poäng.
 + Spillror får högst ha en höjd på 0,3 cm och får ej vara fastsatta i
   underlaget. Spillror kan exempelvis vara tandpetare eller träpluggar.
 + Hinder skall vara minst 15 cm höga och får vara fastsatta i underlaget. Hinder
@@ -301,9 +300,9 @@ sedan lämna Räddningsplatsen och forsätta navigera banan.
 + Ett hinder får ej förekomma ovanpå mer än en linje eller bricka.
 + En robot får flytta på ett hinder eller spillror. Hinder eller spillror
   som har blivit flyttade på av roboten stannar tills dess att banan skall
-  återställas, de får ej flyttas #reformulation([av domare eller tävlande]) även
+  återställas, de får ej flyttas av domare eller tävlande även
   om det hindrar roboten från att komma vidare.
-+ Hinder får ej placeras närmare än 25 cm från banans kanter eller #reformulation([ramper och gungbrädor]).
++ Hinder får ej placeras närmare än 25 cm från banans kanter eller ramper och gungbrädor.
 + I Räddningsplatsen, får hinder placeras överallt så länge som de är minst 10
   cm från samtliga väggar. Dessa hinder ger ej poäng.
 
@@ -330,9 +329,9 @@ sedan lämna Räddningsplatsen och forsätta navigera banan.
   upp eller ner för.
 + En ramp får inte överstiga 25 graders lutning från underlaget.
 + En ramp får bestå av mer än en bricka.
-+ #new_rule([Poäng ges för varje bricka som navigeras på rampen.])
++ Poäng ges för varje bricka som navigeras på rampen.
 + Linjen på rampen kan ha mellanrum, farthinder, korsningar, bråte och hinder.
-+ #new_rule([Rampen ska avslutas i båda riktningarna med en horisontell bricka.])
++ Rampen ska avslutas i båda riktningarna med en horisontell bricka.
 
 == Gungbrädor
 + En gungbräda är en bricka som kan gunga på en mittpunkt.
@@ -344,7 +343,7 @@ sedan lämna Räddningsplatsen och forsätta navigera banan.
 == Räddningsplatsen
 + Den svarta linjen skall sluta på ingången till Räddningsplatsen.
 + Den svarta linjen skall börja igen vid utgången från Räddningsplatsen.
-+ Räddningsplatsen skall ha dimensionerna 120 x 90 cm och ha vita väggar på alla
++ Räddningsplatsen skall ha dimensionerna 120 x 90 cm och ha #reformulation([väggar av någon färg (förutom röd, grönt eller svart)]) på alla
   4 sidor vilka skall ha en höjd på minst 10 cm.
 + Ingången till Räddningsplatsen skall vara markerad med en silverfärgad
   och reflektiv tejp, tejpen skall vara 2,5 cm djup och gå över hela ingången.
@@ -362,21 +361,23 @@ sedan lämna Räddningsplatsen och forsätta navigera banan.
 + Evakueringspunkterna är röda och gröna trianglar med en vägg på 6cm:s höjd och
   tom mitt.
 + Domaren får innan start placera ut evakueringspunkterna i Räddningsplatsens
-  hörn, #new_rule([dessa hörn får ej vara där en ingång eller utgång
-  förekommer.])
+  hörn, dessa hörn får ej vara där en ingång eller utgång
+  förekommer.
 + Vid Lack of Progress, får domaren på nytt placera ut evakueringspunkterna.
 + Evakueringspunkterna skall vara fastsatta i underlaget, det får uppkomma små
   rörelser.
++ #new_rule([Vita LED ljus kan placeras vinkelrätt vid övre delen av räddningsplatsens väggar. Dessa LED ljus får inte placeras över hörnen där evakueringspunkterna befinner sig. ])
 
 == Offer
 + Offer får förekomma var som helst inom Räddningsplatsen.
 + Offer representeras av en kula på en diameter mellan 4-5 cm med
-  #reformulation([en tyngdpunkt i botten av kulan]) och får max väga 80 g.
+  en tyngdpunkt i botten av kulan och får max väga 80 g.
 + Det finns två typer av offer:
   - Döda offer är svarta och leder ej elektricitet.
   - Levande offer är silvriga, reflektiva och leder elektricitet.
 + Offrena skall placeras ut slumpmässigt inom evakueringsplatser. Det skall
   finnas två levande och ett dött offer inom Räddningsplatsen.
++ #new_rule([Det kan förekomma falska offer (objekt eller bilder) som efterliknar riktiga offer i räddningsplatsen. Robotar skall ignorera dessa.])
 
 == Banomgivningen
 + Lagen skall vara förberedda på att anpassa sina robotar till de förhållandena
@@ -390,23 +391,7 @@ sedan lämna Räddningsplatsen och forsätta navigera banan.
 
 
 = Roboten
-== #new_rule([Begrepp och definitioner])
-+ *Verktyg:* Begreppet "verktyg" är omfattande och innefattar både hårdvaru-
-  och mjukvarukomponenter som är nödvändiga för funktionen av roboten. Verktyg
-  innefattar allt från sensorer till algoritmer.
-+ *Kalibrering:* Processen då ett lag ingriper för att justera inställningarna
-  på ett verktyg.
-+ *Utveckling:* Aktiviteter som är ämnade att skapa nya lösningar, teknologier
-  eller system; samt utöka förmågan på existerande lösningar, teknologier eller
-  system. Kalibrering anses inte vara Utveckling.
-+ Verktyg är tillåtna så länge de är utvecklade av laget eller när de inte
-  kan slutföra en uppgift, eller en del av en uppgift, som gör det möjligt för
-  roboten att tjäna poäng utan vidare utveckling (t.ex. färgsensorer, kameror
-  eller bibliotek som är nödvändiga för sensorersfunktion).
-+ Verktyg som inte är utvecklade av laget och som kan slutföra en uppgift, eller
-  en del av en uppgift som gör det möjligt för roboten att tjäna poäng utan
-  vidare utveckling (t.ex. linjeföljningssensorer, AI-kameror, OCR-bibliotek)
-  är förbjudna.
+#rule_removed
 
 == Kontroll
 + Robotarna skall autonomt navigera genom banan. Att på något sätt manuellt
@@ -445,7 +430,7 @@ sedan lämna Räddningsplatsen och forsätta navigera banan.
   skall kunna användas av domaren vid Lack of Progress. Lag skall informera
   domaren om deras Lack of Progress procedur innan start av ett poänglopp och bara
   den visade proceduren är tillåten.
-+ #new_rule([Drönare och svävare är förbjudna.])
++ Drönare och svävare är förbjudna.
 
 == Laget
 + Varje lag får bara ha en robot på banan.
@@ -485,8 +470,8 @@ sedan lämna Räddningsplatsen och forsätta navigera banan.
   diskvalificeras från den specifika starten.
 + Ingen hjälp från mentorer är tillåten under tävlingen.
 + Alla regelbrott kan leda till diskvalificering från tävlingen,
-  #reformulation([diskvalificering från]) en omgång eller poängavdrag dessa
-  beslutas av #new_rule([huvuddomaren]).
+  diskvalificering från en omgång eller poängavdrag dessa
+  beslutas av huvuddomaren.
 
 
 = Omgångar
