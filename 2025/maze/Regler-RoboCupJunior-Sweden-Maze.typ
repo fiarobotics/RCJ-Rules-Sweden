@@ -72,20 +72,20 @@ Lycka till.
 )
 
 = Sammanfattning
-Roboten behöver söka igenom en labyrint efter offer. Labyrinten
+Roboten behöver söka igenom en labyrint efter offer. #new_rule([Labyrinten
 kan ha ett "Farligt Område". Detta område kommer att vara svårare än resten
-av banan. Roboten ska inte hitta den snabbaste vägen genom labyrinten;
+av banan.]) Roboten ska inte hitta den snabbaste vägen genom labyrinten;
 istället bör den utforska så mycket av labyrinten som möjligt. Roboten kommer
-att tilldelas 10, 15 eller 30 poäng för varje #new_rule([kognitiv måltavla]) eller bokstavs offer
+att tilldelas 10, 15 eller 30 poäng för varje färg eller bokstavs offer
 som upptäcks, beroende på dess plats på fältet. Varje framgångsrikt lämnat
-räddningskit av roboten ger den 10 #new_rule([eller 30]) poäng per #reformulation([offer]). Antalet extra poäng
+räddningskit av roboten ger den 10 poäng per räddningskit. Antalet extra poäng
 som roboten får beror på typen av offer.
-- #reformulation([30]) poäng för skadade bokstavs offer
+- 20 poäng för skadade bokstavs offer
 - 10 poäng för stabila bokstavs offer
 - Inga ytterligare poäng för ett oskadat bokstavs offer
-- #reformulation([30]) poäng för #new_rule([en skadad kognitiv måltavla])
-- 10 poäng för #new_rule([en stabil kognitiv måltavla])
-- Inga ytterligare poäng för #new_rule([en oskadad kognitiv måltavla])
+- 20 poäng för ett rött färgat offer
+- 10 poäng för ett gult färgat offer
+- Inga ytterligare poäng för ett grönt färgat offer
 
 Om roboten fastnar i labyrinten kan den startas om vid den senast besökta
 kontrollpunkten. En silvrig bricka indikerar kontrollpunkter, så roboten kan
@@ -98,9 +98,7 @@ hela labyrinten kommer den att få en slut bonus. Roboten kommer också att tjä
 en bonus om den kan lämna labyrinten med ett minimalt antal omstarter. Anta att
 roboten kan hitta tillbaka till början efter att ha utforskat labyrinten. Om
 roboten har lyckats hitta tillbaka till start brickan efter att ha utforskat
-labyrinten så kommer den att få tio bonuspoäng per identifierat offer, #new_rule([10 bonus
-poäng för varje blå bricka som besöktes endast en gång, 5 bonus poäng för varje lyckad 
-navigering av trappor och 5 bonus poäng för varje lyckad navigering av en ramp]) som en
+labyrinten så kommer den att få tio bonuspoäng per identifierat offer som en
 slut bonus.
 
 Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
@@ -121,8 +119,6 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
 
 *Delade medlemmar och robotar:* Inga robotar får delas mellan lagen, #local_change([man får dock tävla i flera lag]).
 
-=== Lag övervakning
-
 *Mentorer:* Varje lag måste ha minst en mentor registrerad och deltagande på tävlingen.
 
 === Ålderskrav
@@ -133,13 +129,11 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
 
 *Tekniska roller:* Alla lagmedlemmar ska ha en teknisk roll (mekanik, design, elektronik, mjukvara osv.) och ska kunna förklara sin roll till en domare. 
 
-== #na
-
 == Robotkrav
 === Robotens kommunikation
 #na
 
-=== Säkerhetskrav
+== Säkerhetskrav
 *Spänning:*
 - Robotar får inte använda nätspänning.
 - Högst tillåten spänning: 48V DC eller 25V AC RMS.
@@ -231,21 +225,16 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
   en kultur av nyfikenhet och upptäckande.
 
 = Banan
-== #new_rule([Beskrivning])
+== Beskrivning
 + Banan kommer att bestå av ett horisontellt golv, en omkrets vägg, ramper och
   väggar inom fältet.
 + Alla brickor definieras som en 30 cm x 30 cm stor yta.
 + Alla väggar som används för att skapa labyrinten är minst 15 cm höga från
   golvet eller toppen av trappor, 30 cm i längd och är monterade på kanterna av
   brickorna.
-+ #new_rule([Definitionen av vägarna inkluderar också strukturen på ändarna (ex. profiler, pelare, ...).])
 + Brickor kommer att användas som ramper. De kommer att ha en lutning med en
   maximal vinkel på 25 grader från horisonten och är alltid raka.
-+ Rampen ska avslutas i båda riktningarna med en horisontell bricka.
-
-#figure(
-  image("images/ex-ramp.png"),
-)
++ #new_rule([Rampen ska avslutas i båda riktningarna med en horisontell bricka.])
 
 == Underlaget
 + Golv kan vara antingen släta eller texturerade (som linoleum eller matta) och
@@ -258,10 +247,10 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
     körning.
   + Arrangörerna ska fästa de färgade brickorna i golvet, men lagen bör vara
     förberedda på små rörelser av dessa brickor.
-+ Svarta brickor på banan representerar hål, som roboten måste undvika.
-+ Silverbrickor på banan representerar kontrollpunkter.
++ Svarta brickor #reformulation([på banan]) representerar hål, som roboten måste undvika.
++ Silverbrickor #reformulation([på banan]) representerar kontrollpunkter.
 + Blåa brickor:
-  + Blåa brickor på banan representerar vatten eller annan svårnavigerad
+  + Blåa brickor #reformulation([på banan]) representerar vatten eller annan svårnavigerad
     terräng.
   + Om en robot besöker en blå bricka måste den stanna i minst 5 sekunder innan
     den besöker en annan bricka.
@@ -293,15 +282,15 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
   svårighetsgrad när dessa ändringar genomförs.
 
 
-== Fartgupp, hinder och trappor
+== #new_rule([Fartgupp, hinder och trappor])
 + Fartguppen ska vara fastsatta i golvet och ha en maximal höjd på #new_rule(1) cm.
-+ Fartgupp får inte förekomma på ramper och trappor.
++ #new_rule([Fartgupp får inte förekomma på ramper och trappor.])
 + Hinder:
   + har en minimal höjd på 15 cm.
   + får bestå av vilket stort och tungt föremål som helst.
   + får vara fastsatt i golvet.
   + får vara av vilken form som helst.
-+ Hinder ska placeras:
++ #reformulation([Hinder ska placeras]):
   + minst 20 cm från någon vägg ELLER
   + vidröra någon vägg och minst 20 cm från den motsatta kanten på brickan och
     andra hinder.
@@ -312,14 +301,14 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
 + Stigningen på trapporna (det vill säga vinkeln på en platta i förhållande
   till horisonten när den placeras på trapporna) ska vara lika med eller mindre än
   25 grader.
-+ Trappor får användas istället för ramp för att tillåta våningsbyte.
-+ Trappor ska placeras mellan väggar.
++ #new_rule([Trappor får användas istället för ramp för att tillåta våningsbyte.])
++ Trappor #reformulation([ska]) placeras mellan väggar.
 
 #figure(
   image("images/ex-trappa.png", width: 70%),
 )
 
-== Farligt område
+== #new_rule([Farligt område])
 + Det farliga området förväntas vara svårare än resten av banan.
 + Det farliga områdets ingång skall vara markerad med en röd bricka, området
   skall också vara helt omgiven av väggar (förutom vid ingången).
@@ -336,52 +325,38 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
 )
  
 == Offer
-+ Det finns två typer av offer: bokstavs #new_rule([offer och kognitiva måltavlor]).
++ Det finns två typer av offer: bokstavs- och färg-offer.
 + Offren skall vara placerad nära golvet på fältet (ungefär 7 cm ovanför golvet,
   se figur @offer1).
 #figure(
   image("images/ex-offer1.png", width: 80%), caption: [Placeringen av offer]
 )<offer1>
+
 + Offer får ej placeras på väggar som är vända mot
-  svarta/silveriga/blåa/röda brickor, brickor
+  svarta/#reformulation([/silveriga/blåa])#new_rule([/röda]) brickor, brickor
   med hinder/fartgupp/trappor, eller ramper.
-+ Det får finnas objekt som liknar offer till utseendet men
++ Det #reformulation([får]) finnas objekt som liknar offer till utseendet men
   inte är offer. Detta inkluderar men är inte begränsat till bokstäver, symboler
-  eller färger som inte beskrivs i detta avsnitt #new_rule([eller kognitiva måltavlor
-  med värden som inte representerar en hälsostatus.]). Sådana objekt ska inte
+  eller färger som inte beskrivs i detta avsnitt. Sådana objekt ska inte
   identifieras som offer av robotar.
 + Bokstavs-offer är versaler som är tryckta på eller fästa på väggen. De är
   tryckta i svart, med en sans serif-typsnitt som 'Arial'. De kan roteras, och
-  deras höjd ska vara 4 cm. Bokstäverna representerar offrets
+  deras höjd #reformulation([ska]) vara 4 cm. Bokstäverna representerar offrets
   hälsostatus.
-  + Skadat offer: #reformulation([Φ])
-  + Stabilt offer: #reformulation([Ψ])
-  + Oskadat offer: #reformulation([Ω])
+  + Skadat offer: H
+  + Stabilt offer: S
+  + Oskadat offer: U
 #figure(
-  image("images/ex-offer2.png", width: 60%) // Behöver uppdateras till ny bild
+  image("images/ex-offer2.png", width: 60%)
 )
-#new_rule([
-+ Kognitiva måltavlor har formen av en cirkel. Den yttersta cirkeln har en 5 cm diameter, och 
-  består av up till 5 koncentriska ringar. Den innersta cirkeln har en diameter på 1 cm, och diametern
-  av varje efterföljande yttre ring ökar med 1 cm, de bildar då ringar med diameter av 1 cm, 2 cm, 3 
-  cm, 4 cm och 5 cm. Ringarna och cirkeln kan ha olika färger. Färgen av ringarna och cirkeln motsvarar ett numeriskt värde:
-  + Svart = -2
-  + Röd = -1
-  + Gul = 0
-  + Grön = 1
-  + Blå = 2
-+ Hälsostatusen av ett offer vid en kognitiva måltavla kan beräknas genom att summera värdet av de 5 ringarna.
-  Ringar brevid varandra av samma färg är inte sammanslagna. Roboten måste alltid överväga
-  alla 5 ringar separat och summera värdet för alla 5 ringar, oavsätt om färger repeteras. 
-  Beroende på summan, så kan hälsostatusen bestämmas.
-  + Skadat offer: summa = 2
-  + Stabilt offer: summa = 1
-  + Oskadat offer: summa = 0
-])
-// Ny bild av måltavlor
++ Färgade offer är tryckta på eller fästa på en vägg. Deras storlek ska vara 16
+  $"cm"^2$ med högst 6 cm i någon riktning. 
+  + Skadat offer: Röd
+  + Stabilt offer: Gul
+  + Oskadat offer: Grönt
 
 == Räddningskit
-+ Ett räddningskit representerar ett förstahjälpen-kit
++ Ett räddningskit representerar #reformulation([ett förstahjälpen-kit])
   som distribueras till ett offer som fångats i en naturkatastrof. Den
   symboliserar verktyg, medicinska förnödenheter eller enheter som används i
   räddningsprocessen, såsom GPS-sändare eller till och med något så enkelt som
@@ -391,8 +366,8 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
   eller studsa bort från offret.
 + Varje räddningskit måste ha en minimal storlek på 1 cm i varje dimension och
   ha en minimal volym på 1 $"cm"^3$ efter utplaceringen.
-+ En robot får som mest bära på #reformulation([8]) räddningskit.
-+ Varje lag ansvarar för sitt räddningskits-system, inklusive
++ En robot #reformulation([får som mest bära på 12 räddningskit]).
++ Varje lag ansvarar för sitt #reformulation([räddningskits-system]), inklusive
   att ta med räddningskiten till tävlingen. Lagkaptenen ansvarar för att lasta
   räddningskiten på sin robot och hämta dem från fältet med domarens tillstånd
   efter poängloppets slut.
@@ -407,12 +382,12 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
 + På banan kan det uppkomma störningar från ljus i form av till exempel
   kamerablixtar.
 + Alla värden i regelboken har en tolerans på $plus.minus$10%
-+ Objekt som upptäcks av roboten ska vara särskiljbara från
++ Objekt som upptäcks av roboten #reformulation([ska]) vara särskiljbara från
   omgivningen genom sin färg eller form.
 
 
 = Roboten
-== Begrepp och definitioner
+== #new_rule([Begrepp och definitioner])
 + *Verktyg:* Begreppet "verktyg" är omfattande och innefattar både hårdvaru-
   och mjukvarukomponenter som är nödvändiga för funktionen av roboten. Verktyg
   innefattar allt från sensorer till algoritmer.
@@ -445,7 +420,7 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
 + Alla robotkit eller delar, antingen tillgängliga på marknaden eller byggda
   från rå hårdvara, får användas så länge som robotens design och konstruktion
   primärt och väsentligt är de tävlandes eget arbete.
-+ Drönare och svävare är förbjudna.
++ #new_rule([Drönare och svävare är förbjudna.])
 + Lag får inte använda kommersiellt producerade robotkit eller sensorkomponenter
   som är specifikt utformade eller marknadsförda för att slutföra någon enskild
   huvuduppgift för RoboCupJunior Rescue. Robotar som bryter mot detta skall
@@ -471,9 +446,8 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
   skall kunna användas av domaren vid Lack of Progress. Lag skall informera
   domaren om deras Lack of Progress procedur innan start av en poäng körning och
   bara den visade proceduren är tillåten.
-+ Roboten ska ha en specifik LED eller display som bara är till för
-  att identifiera offer, denna måste vara tydligt synbar för domaren.
-+ #new_rule([Roboten är förbjuden från att avsiktligt märka någon del av tävlingsplanen.])
++ #new_rule([Roboten ska ha en specifik LED eller display som bara är till för
+  att identifiera offer, denna måste vara tydligt synbar för domaren.])
 
 == Laget
 + Varje lag får bara ha en robot på banan.
@@ -594,18 +568,18 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
 == Poäng
 + För att identifiera ett offer ska roboten stanna inom 15 cm från ett offer
   och blinka #new_rule([indikatorn (se @led\.12)]) som är synlig för domaren
-  i 5 sekunder samtidigt som den står stilla. Blinkningarna ska ha
+  i 5 sekunder samtidigt som den står stilla. #new_rule([Blinkningarna ska ha
   ett intervall på 500ms på 500ms av för att det ska räknas som en lyckad offer
-  identifikation.
+  identifikation.])
 + Poäng ges för varje Successful Victim Identification (SVI) på banan.
   + För offer som är placerade på en linjär bricka.
-    + För #reformulation([bokstavs]) offer: 5 poäng
-    + För #reformulation([kognitiva måltavlor]): 10 poäng
+    + För färg offer: 5 poäng
+    + För bokstavs offer: 10 poäng
   + På flytande brickor.
-    + För #reformulation([bokstavs]) offer: 15 poäng
-    + För #reformulation([kognitiva måltavlor]): 30 poäng
+    + För färg offer: 15 poäng
+    + För bokstavs offer: 30 poäng
   #figure(
-    image("images/ex-poang.png") // Uppdatera bild
+    image("images/ex-poang.png")
   )
 + En robot måste placera ut ett räddningskit inom 15 cm från offret för att
   det ska räknas som en lyckad placering. Placeringen bestäms av platsen som
@@ -613,30 +587,25 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
   offret.
 + Inga poäng ska ges för att placera ett räddningskit till ett offer som inte
   först har identifierats framgångsrikt.
-+ 10 poäng ges #reformulation([för lyckad placering av ett räddningskit, 
-  medan 30 poäng ges för två lyckade placeringar av räddningskit till samma offer.]). Roboten kan få följande
++ 10 poäng ges per lyckad placering av ett räddningskit. Roboten kan få följande
   mängd poäng för placering av räddningskit:
   + Bokstavs offer:
-    + Skadad (#reformulation([Φ])): två räddningskit per offer. (Maximala poäng för
-      räddningskitplacering per offer: #reformulation([30]) poäng.)
-    + Stabil (#reformulation([Ψ])): ett räddningskit per offer. (Maximala poäng för
+    + Skadad (H): två räddningskit per offer. (Maximala poäng för
+      räddningskitplacering per offer: 20 poäng.)
+    + Stabil (S): ett räddningskit per offer. (Maximala poäng för
       räddningskitplacering  per offer: 10 poäng.)
-    + Oskadad (#reformulation([Ω])): inga räddningskit per offer.
-  + #reformulation([Kognitiva måltavlor]):
-    + #reformulation([Skadad (2)]): två räddningskit per offer. (Maximala poäng för räddningskitplacering per
-      offer: #reformulation([30]) poäng.)
-    + #reformulation([Stabil (1)]): ett räddningskit per offer. (Maximala poäng för räddningskitplacering per
+    + Oskadad (U): inga räddningskit per offer.
+  + Färg offer:
+    + Röd: två räddningskit per offer. (Maximala poäng för räddningskitplacering per
+      offer: 20 poäng.)
+    + Gul: ett räddningskit per offer. (Maximala poäng för räddningskitplacering per
       offer: 10 poäng.)
-    + #reformulation([Oskadad (0)]): inga räddningskit per offer.
-+ #new_rule([Lyckade besök på blå brickor (SBV). 30 poäng ges för att besöka en blå bricka en gång. 
-  Delvist lyckade besök på blå brickor - om roboten återbesöker samma blå bricka så sänks poängen 
-  för den blå brickan. För varje senare gång roboten besöker samma bricka, sänks den totala poängen som 
-  ges av den brickan med 10 poäng. poängen som kan ges av en enskild blå bricka kan inte vara mindre än 0.])
+    + Grön: inga räddningskit per offer.
 + Pålitlighetsbonusen är ett icke-negativt tal och består av antalet lyckade
-  offer identifieringar (SVI), lyckade placeringar av räddningskit (SRD), #new_rule([lyckade besök på blå bricka (SBV)]) och ett
+  offer identifieringar (SVI), lyckade placeringar av räddningskit (SRD) och ett
   avdrag för det totala antalet Lack of Progress (LoP) enligt följande:
   $
-    ("RELIABILITY BONUS") = ("SVI") times 10 + ("SRD") times 10 #new_rule([(SBV) times 10]) - ("LoP") times #reformulation([15])
+    ("RELIABILITY BONUS") = ("SVI") times 10 + ("SRD") times 10 - ("LoP") times 10
   $
 + Lyckad navigering av Fartgupp. För varje bricka med fartgupp som passerats får
   en robot 5 poäng.
@@ -654,15 +623,10 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
 + Lyckad navigering av kontrollpunkter. En robot får 10 poäng för varje besökt
   kontrollpunkt.
 + Lyckad Exitbonus. En robot får 10 poäng för varje offer som framgångsrikt
-  identifierats #new_rule([, 10 poäng för varje lyckat besök på blå bricka (SBV), 
-  5 poäng för varje lyckad navigering av trappor (SSN) och 5 poäng för varje lyckad 
-  navigering av en ramp (SRN)]). 'Exitbonus'-villkoret uppfylls när roboten återvänder till
+  identifierats. 'Exitbonus'-villkoret uppfylls när roboten återvänder till
   startbrickan och stannar där i minst 10 sekunder för att avsluta poängloppet
-  samt blinka med indikatorn (se @led\.12). Blinkningarna ska ha ett
-  intervall på 1s på 1s av.
-  $
-    ("SUCCESSFUL EXIT BONUS") = ("SVI") times 10 #new_rule([+ ("SBV") times 10 (SSN) times 5 + (SRN) times 5])
-  $
+  #new_rule([samt blinka med indikatorn (se @led\.12). Blinkningarna ska ha ett
+  intervall på 1s på 1s av.])
 + En robot får inga dubbla belöningar. Till exempel, om en robot framgångsrikt
   passerar en bricka med fartgupp flera gånger, kommer endast en lyckad passage
   av fartguppet att belönas per bricka. Samma resultat gäller för alla andra
