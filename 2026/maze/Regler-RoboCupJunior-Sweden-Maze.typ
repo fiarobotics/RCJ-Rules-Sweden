@@ -111,7 +111,7 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
 
 #set heading(numbering: "1.")
 
-= #new_rule([Generella Regler])
+= Generella Regler
 == Lagkrav
 === Lag Storlek
 
@@ -231,7 +231,7 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
   en kultur av nyfikenhet och upptäckande.
 
 = Banan
-== #new_rule([Beskrivning])
+== Beskrivning
 + Banan kommer att bestå av ett horisontellt golv, en omkrets vägg, ramper och
   väggar inom fältet.
 + Alla brickor definieras som en 30 cm x 30 cm stor yta.
@@ -294,7 +294,7 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
 
 
 == Fartgupp, hinder och trappor
-+ Fartguppen ska vara fastsatta i golvet och ha en maximal höjd på #new_rule(1) cm.
++ Fartguppen ska vara fastsatta i golvet och ha en maximal höjd på 1 cm.
 + Fartgupp får inte förekomma på ramper och trappor.
 + Hinder:
   + har en minimal höjd på 15 cm.
@@ -336,7 +336,7 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
 )
  
 == Offer
-+ Det finns två typer av offer: bokstavs #new_rule([offer och kognitiva måltavlor]).
++ Det finns två typer av offer: #new_rule([bokstavsoffer och kognitiva måltavlor]).
 + Offren skall vara placerad nära golvet på fältet (ungefär 7 cm ovanför golvet,
   se figur @offer1).
 #figure(
@@ -354,11 +354,11 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
   tryckta i svart, med en sans serif-typsnitt som 'Arial'. De kan roteras, och
   deras höjd ska vara 4 cm. Bokstäverna representerar offrets
   hälsostatus.
-  + Skadat offer: #new_rule([Φ])
-  + Stabilt offer: #new_rule([Ψ])
-  + Oskadat offer: #new_rule([Ω])
+  + Skadat offer: #new_rule([$underline(Phi)$])
+  + Stabilt offer: #new_rule([$underline(Psi)$])
+  + Oskadat offer: #new_rule([$underline(Omega)$])
 #figure(
-  image("images/ex-offer2-2026.png", width: 60%) // Behöver uppdateras till ny bild
+  image("images/ex-offer2-2026.png", width: 60%)
 )
 #new_rule([
 + Kognitiva måltavlor har formen av en cirkel. Den yttersta cirkeln har en 5 cm diameter, och 
@@ -371,7 +371,7 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
   + Grön = 1
   + Blå = 2
 + Hälsostatusen av ett offer vid en kognitiva måltavla kan beräknas genom att summera värdet av de 5 ringarna.
-  Ringar brevid varandra av samma färg är inte sammanslagna. Roboten måste alltid överväga
+  Ringar bredvid varandra av samma färg är inte sammanslagna. Roboten måste alltid överväga
   alla 5 ringar separat och summera värdet för alla 5 ringar, oavsätt om färger repeteras. 
   Beroende på summan, så kan hälsostatusen bestämmas.
   + Skadat offer: summa = 2
@@ -381,7 +381,6 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
 #figure(
   image("images/ex-targets-2026.png", width: 80%)
 )
-// Ny bild av måltavlor
 
 == Räddningskit
 + Ett räddningskit representerar ett förstahjälpen-kit
@@ -602,13 +601,13 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
   identifikation.
 + Poäng ges för varje Successful Victim Identification (SVI) på banan.
   + För offer som är placerade på en linjär bricka.
-    + För #new_rule([bokstavs]) offer: 5 poäng
+    + För #new_rule([bokstavsoffer]): 5 poäng
     + För #new_rule([kognitiva måltavlor]): 10 poäng
   + På flytande brickor.
-    + För #new_rule([bokstavs]) offer: 15 poäng
+    + För #new_rule([bokstavsoffer]): 15 poäng
     + För #new_rule([kognitiva måltavlor]): 30 poäng
   #figure(
-    image("images/ex-poang-2026.png") // Uppdatera bild
+    image("images/ex-poang-2026.png") 
   )
 + En robot måste placera ut ett räddningskit inom 15 cm från offret för att
   det ska räknas som en lyckad placering. Placeringen bestäms av platsen som
@@ -620,11 +619,11 @@ Roboten kan tjäna ytterligare poäng genom att navigera följande hinder:
   medan 30 poäng ges för två lyckade placeringar av räddningskit till samma offer.]). Roboten kan få följande
   mängd poäng för placering av räddningskit:
   + Bokstavs offer:
-    + Skadad (#new_rule([Φ])): två räddningskit per offer. (Maximala poäng för
+    + Skadad (#new_rule([$underline(Phi)$])): två räddningskit per offer. (Maximala poäng för
       räddningskitplacering per offer: #new_rule([30]) poäng.)
-    + Stabil (#new_rule([Ψ])): ett räddningskit per offer. (Maximala poäng för
+    + Stabil (#new_rule([$underline(Psi)$])): ett räddningskit per offer. (Maximala poäng för
       räddningskitplacering  per offer: 10 poäng.)
-    + Oskadad (#new_rule([Ω])): inga räddningskit per offer.
+    + Oskadad (#new_rule([$underline(Omega)$])): inga räddningskit per offer.
   + #new_rule([Kognitiva måltavlor]):
     + #new_rule([Skadad (2)]): två räddningskit per offer. (Maximala poäng för räddningskitplacering per
       offer: #new_rule([30]) poäng.)
