@@ -6,6 +6,14 @@
 #set text(font: "New Computer Modern")
 #set par(justify: true)
 
+#let local_change(x) = emph([#x])
+#let new_rule(x) = underline([#x])
+#let reformulation(x) = highlight(fill: gray, [#x])
+#let highl(x) = highlight(fill: yellow, [#x])
+#let rule_removed = [\_-\_-]
+#let not_applicable = [—]
+#let na = not_applicable
+
 #align(center)[
   #text(size: 18pt, weight: "bold")[Poängblad RoboCupJunior OnStage 2026]
   #linebreak()
@@ -26,7 +34,7 @@
   fill: (_, row) => {
     if row == 0 { 
       gray.lighten(40%) 
-    } else if row == 6 { 
+    } else if row == 7 { 
       rgb(255, 220, 220) 
     } else { 
       white 
@@ -37,95 +45,95 @@
   [*#text(size: 11pt)[Kategori]*], [*#text(size: 11pt)[Exempel på vad som kan ge poäng]*], [*#text(size: 13pt)[Poäng]*],
   
   // Row 1
-  [#text(size: 11pt)[*Programmering*]], 
-  [
-    #text(size: 8pt)[
-      Förmåga att förklara källkod och interaktionen mellan hårdvara och
-      mjukvara:
+  new_rule[
+    #text(size: 11pt)[*Tekniska färigheter*]], 
+    new_rule[
+      #text(size: 8pt)[
+        
+      *Förståelse för programmet och hur programvara fungerar,* till exempel genom att beskriva:
       #list(
-        [Valet av programmeringsspråk],
-        [Svårigheter med mjukvaran],
-        [Utveckling av korrekta modeller, dataset och/eller bibliotek som
-        används för att lösa programmeringsproblemen],
-        [Effektiv och optimerad kod med klar dokumentation och
-        kommentarer, samt användning av version control],
-        [Utveckling av kalibrering, testning och debugging funktioner],
-        [Användande av AI/AR teknik.]
+        [Resonemanget bakom valet av programmeringsspråk.],
+        [Hur modeller, dataset och/eller bibliotek skapades eller anpassades för att möta specifika behov.],
+        [Strategier för att skriva effektiv, optimerad och väl dokumenterad kod, inklusive användning av versionshantering.]
       )
     ]
-  ], 
-  [#text(size: 13pt)[/7]],
+    ], 
+  new_rule[#text(size: 13pt)[/20]],
   
   // Row 2
-  [#text(size: 11pt)[*Elektro- mekaniska system*]], 
-  [
-    #text(size: 8pt)[
-      Förmåga att förklara de val som gjordes under designen av
-      elektromekaniska system:
+  new_rule[
+    #text(size: 11pt)[*Tekniska färigheter*]], 
+    new_rule[
+      #text(size: 8pt)[
+        
+      *Förståelse för systemet och hur hårdvara fungerar,* till exempel genom att beskriva:
       #list(
-        [Valet av material, mikrokontroller och ställdon],
-        [Utveckling av egna kretsar],
-        [Energihantering, reglerteknik och batterival],
-        [Val under designprocessen för att säkerställa pålitlighet],
-        [Hållbara design val inklusive val av material]
-      )
-      
-      Förklara hur de valda systemen är ändamålsenliga:
-      #list(
-        [Avancerad rörlighet t.ex. robotar med ben],
-        [Stabila konstruktioner och design av egna komponenter],
-        [System med hög precision inklusive pneumatik],
-        [Funktionella händer/armar/ansikten],
-        [Robotarmar designade för objektmanipulering],
-        [Självbalanserande system]
+        [Val av material, mikrokontrollers, sensorer och aktuatorer.],
+        [Val av system, till exempel visuell eller ljudbaserad igenkänning, funktionella armar/händer/ansikten, vägledning, navigering, styrsystem eller pneumatik.],
+        [Utveckling av egen elektronik (inklusive kretskort/PCB) eller mekanisk design.],
+        [Strömhantering, reglering och val av batterier.],
+        [Avancerad mobilitet – till exempel omnidirektionella robotar, benrobotar eller balanserande robotar.],
+        [Stabil konstruktion, systemkinematik och design av specialkomponenter.],
+        [Hållbara designval, inklusive val av material.],
+        [Robotar som kan uppfatta sin omgivning och dynamiskt reagera på oväntade händelser med lämpliga åtgärder.],
+        [Integration och kommunikation mellan flera sensorsystem.],
+        [Design för robot–robot- och/eller människa–robot-interaktion.]
       )
     ]
-  ], 
-  [#text(size: 13pt)[/7]],
+    ], 
+  new_rule[#text(size: 13pt)[/30]],
   
   // Row 3
-  [#text(size: 11pt)[*Sensorer och #linebreak() kommunikations- system*]], 
-  [
-    #text(size: 8pt)[
-      Förmåga att förklara den roll som sensorer och kommunikationsutrustning
-      och hur roboten interagerar med sin scen omgivning:
+  new_rule[
+    #text(size: 11pt)[*Tekniska färigheter*]], 
+    new_rule[
+      #text(size: 8pt)[
+        
+      *Teknikens svårighetsgrad och val av teknik,* till exempel genom att beskriva:
       #list(
-        [Robot system som dynamiskt kan hantera oförväntade händelser],
-        [Robotarna har en förståelse om sin omgivning och kan reagera på
-        detta],
-        [Integreringen av flera sensorsystem för att lösa problem],
-        [Utveckling av kommunikation mellan sensorer],
-        [Utveckling av kommunikations arkitekturer (asymmetrisk
-        kommunikation)]
-      )
-      
-      Förklara hur de valda systemen är ändamålsenliga:
-      #list(
-        [Visuell/Ljud förståelse],
-        [Utvecklade orienterings, navigations och kontrollsystem],
-        [Robot till Robot och/eller naturlig robot till människa interaktion],
-        [Scen/Robot lokaliseringssystem]
+        [Komplexiteten i mjukvaru- och hårdvarudesign.],
+        [Hur designval görs för att säkerställa att systemen är tillförlitliga och hållbara.],
+        [System med hög precision.]
       )
     ]
-  ], 
-  [#text(size: 13pt)[/7]],
+    ], 
+  new_rule[#text(size: 13pt)[/10]],
   
   // Row 4
-  [#text(size: 11pt)[*Innovation #linebreak() och #linebreak() funktions- utveckling*]], 
-  [
+  new_rule[#text(size: 11pt)[*Ingenjörsmässig \ designprocess*]], 
+    new_rule[
     #text(size: 8pt)[
-      Förmåga att förklara och förevisa innovativa funktioner eller robot
-      komponenter:
+      *Hur teamet bearbetar sitt arbete och sitt lärande, inklusive den iterativa processen som teamet använde för att utveckla eller förbättra sitt robotprojekt,* till exempel genom att beskriva:
       #list(
-        [Innovation genomförd med tydlig bevis på testning, forskning och
-        utveckling. Med innovationer som kan inspirera framtida deltagare],
-        [Laget kan förklara sin utveckling baserat på tidigare återkoppling]
+        [Hur samarbetade teamet i den iterativa processen kring robotens/kodens design?],
+        [Hur övervann eller löste teamet de utmaningar som uppstod under utvecklingen av mjukvara och hårdvara tillsammans?],
+        [Om AI används, hur är AI involverat i någon del av projektets utveckling?],
+        [Hur använde teamet tydliga bevis på kalibrering, testning och felsökning, forskning och utveckling i arbetet med att förbättra robotens prestanda?],
+        [Läranderesultaten – vilka färdigheter eller kompetenser som utvecklades genom projektet.]
       )
     ]
-  ], 
-  [#text(size: 13pt)[/6]],
+  ]
+  , 
+  new_rule[#text(size: 13pt)[/20]],
   
   // Row 5
+  new_rule[#text(size: 11pt)[*Demonstration av valda funktioner*]], 
+  new_rule[
+    #text(size: 8pt)[
+      Demonstration av att de fyra funktionerna fungerar: \
+      #text(size: 11pt)[
+      *Valda funktioner:*
+      - 1: #h(9cm) /3
+      - 2: #h(9cm) /3
+      - 3: #h(9cm) /3
+      - 4: #h(9cm) /3
+      ]
+      3 - fungerar utan problem 2 - fungerar med mindre problem \ 1 - fungerar delvis, 0 - fungerar inte alls
+    ]
+  ], 
+  new_rule[#text(size: 13pt)[/12]],
+  
+  // Row 6
   [#text(size: 11pt)[*Lagarbete och laganda*]], 
   [
     #text(size: 8pt)[
@@ -133,9 +141,9 @@
       Robocup Juniors anda. 
     ]
   ], 
-  [#text(size: 13pt)[/3]],
+  new_rule[#text(size: 13pt)[/8]],
   
-  // Row 6 - Red background for poängavdrag
+  // Row 7 - Red background for poängavdrag
   [#text(size: 11pt)[*Poäng- #linebreak() avdrag*]], 
   [
     #text(size: 8pt)[
@@ -147,18 +155,20 @@
       )
     ]
   ], 
-  [#text(size: 13pt)[/-15]],
+  new_rule[#text(size: 9pt)[(Upp till\ domarna)]],
   
-  // Row 7
+  // Row 8
   [#text(size: 11pt)[*Slutpoäng*]], 
   [], 
-  [#text(size: 13pt, weight: "bold")[/30]]
+  new_rule[#text(size: 13pt, weight: "bold")[/100]]
+
+  
 )
 
 #pagebreak()
 
 #align(center)[
-  #text(size: 18pt, weight: "bold")[Poängblad RoboCupJunior OnStage 2025]
+  #text(size: 18pt, weight: "bold")[Poängblad RoboCupJunior OnStage 2026]
   #linebreak()
   #text(size: 14pt, weight: "bold")[Föreställning]
 ]
@@ -200,56 +210,55 @@
         [Temat är tydligt och sammanhängande genom hela föreställningen],
         [Föreställningen är engagerande och tar steg att underhålla
         publiken],
-        [Effektiv användning av scenytan, relativt till temat eller den
+        [Effektiv användning av scenytan och rekisitan, relativt till temat eller den
         sammanhängande idén],
-        [Robotarna är ett komplement till föreställningen]
+        [Robotarna #new_rule([och rekvisitan]) är ett komplement till föreställningen]
       )
     ]
   ], 
-  [#text(size: 13pt)[/12]],
+  new_rule[#text(size: 13pt)[/30]],
   
   // Row 2
   [#text(size: 11pt)[*Robot interaktion och systemintegrering*]], 
-  [
+  new_rule[
     #text(size: 8pt)[
       #list(
-        [Interaktionen med original och innovativ rekvisita eller sceneri som
-        påverkar föreställningen och tillför värde],
-        [Svåra rörelse används och är ett komplement till temat],
-        [Effektfull och intressant interaktion mellan robotar och/eller
-        människor],
-        [Samtliga robotsystem används genomgående i föreställningen]
+        [Framträdandet innehåller komplexa eller utmanande rörelser som passar temat och tillför värde till framträdandet.], 
+        [Teamet använde intressanta, smidiga och naturliga interaktioner mellan robotar och/eller människor som tillför värde till framträdandet.], 
+        [Människor på scenen *distraherar aldrig publiken* från robotarnas handlingar, och deras rörelser förstärker hela robotframträdandet.], 
+        [Alla robotsystem (t.ex. sensorer, motorer) används effektivt, på flera sätt och genom hela framträdandet.],
+        [Rekvisita som är interaktiv och fullt integrerad i framträdandet, och tillför värde till framträdandet.]
       )
     ]
   ], 
-  [#text(size: 13pt)[/12]],
+  new_rule[#text(size: 13pt)[/30]],
   
   // Row 3
   [#text(size: 11pt)[*Effektiv #linebreak() implementering av presenterade funktioner*]], 
   [
     #text(size: 8pt)[
       Implementering av de fyra funktionerna:
-      Bra implementering och effekt - funktionerna fungerar som förväntat och
-      lägger till meningsfullt värde till föreställningen. Max 4 poäng per funktion.
+      Bra #new_rule([implementation, synlighet]) och effekt - funktionerna fungerar som förväntat och
+      lägger till meningsfullt värde till föreställningen. Max #new_rule([10]) poäng per funktion.
       
 
       #text(size: 11pt)[
-      **Valda funktioner:**
-      - 1: #h(9cm) /4
-      - 2: #h(9cm) /4
-      - 3: #h(9cm) /4
-      - 4: #h(9cm) /4
+      *Valda funktioner:*
+      - 1: #h(9cm) /#new_rule([10])
+      - 2: #h(9cm) /#new_rule([10])
+      - 3: #h(9cm) /#new_rule([10])
+      - 4: #h(9cm) /#new_rule([10])
       ]
     ]
   ], 
-  [#text(size: 13pt)[/16]],
+  new_rule[#text(size: 13pt)[/40]],
   
   // Row 4 - Red background for poängavdrag
   [#text(size: 11pt)[*Poängavdrag #linebreak() (-3 poäng per #linebreak() förseelse)*]], 
   [
     #text(size: 8pt)[
       #list(
-        [Varje oplanerad ingripande av människor (inkludera fjärr eller
+        [Varje oplanerad ingripande av människor #new_rule([inom scenytan]) (inkludera fjärr eller
         mänskligt kontrollerade rörelser)],
         [För varje omstart],
         [Varje 10 sekunder som överstiger tilldelad tid]
@@ -263,5 +272,5 @@
   // Row 5
   [#text(size: 11pt)[*Slutpoäng*]], 
   [], 
-  [#text(size: 13pt, weight: "bold")[/40]]
+  new_rule[#text(size: 13pt, weight: "bold")[/100]]
 )
