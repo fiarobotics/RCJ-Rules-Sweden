@@ -57,7 +57,7 @@ tillämpas är bortplockade och ersatta med "#na". Detta är för att denna rege
 ska behålla samma numrering av reglerna som de internationella reglerna.
 
 == Årets Scen
-Scenen för OnStage 2025 kommer vara placerad på samma nivå som domarna.
+Scenen för OnStage 2026 kommer vara placerad på samma nivå som domarna.
 
 Scenen kommer vara 5x4 meter.
 
@@ -70,7 +70,7 @@ Projektorduken kommer vara placerad ca 1 meter ovanför och 2.5 meter bakom scen
 = Sammanfattning 
 OnStage är öppen tävlingsgren där lagen får skapa en kreativ och underhållande robotuppvisning. Uppvisningen kan vara allt från en dans, till trolleritrick, till en teaterpjäs, till en konstutställning, eller något helt annat. Lagen uppmuntras att vara kreativa, innovativa och underhållande, både i design av sina robotar och sin uppvisning.
 
-Lagen kommer välja ut fyra av sin robots funktioner under den tekniska intervjun vilka de särskilt döms efter. Lämpligt är att framföra de tekniska lösningar och implementationer som laget tycker är bäst. Några exempel av robotfunktioner är:
+Lagen kommer välja ut fyra av sin robots funktioner under den tekniska intervjun vilka de särskilt döms efter. #reformulation([Dessa fyra funktioner måste tydligt vara synliga för domarna under framträdandet.]) Lämpligt är att framföra de tekniska lösningar och implementationer som laget tycker är bäst. Några exempel av robotfunktioner är:
 - Rörelseförmåga
 - Objekt/människo-detektion och undvikande
 - Elektromekanisk design
@@ -102,13 +102,13 @@ Lycka till!
 
 *Största storlek:* #na
 
-*Delade medlemmar och robotar:* Inga robotar får delas mellan lagen, #local_change([man får dock tävla i flera lag]).
+*Delade medlemmar och robotar:* Inga robotar får delas mellan lagen, man får dock tävla i flera lag.
 
 *Mentorer:* Varje lag måste ha minst en mentor registrerad och deltagande på tävlingen.
 
 === Ålderskrav
 
-*Lagmedlemmar:* #local_change([Tävlande får inte vara mer än 19 år gammal på den 1 Juli det året de tävlar.])
+*Lagmedlemmar:* Tävlande får inte vara mer än 19 år gammal på den 1 Juli det året de tävlar.
 
 === Lagmedlemmar
 
@@ -130,13 +130,13 @@ Lycka till!
   äventyras.
 
 *Batterisäkerhet:*
-- Lithium batterier ska förvaras i säkerhets påsar, och laddning ska övervakas
+- Litihum batterier ska förvaras i säkerhets påsar, och laddning ska övervakas
   av en lagmedlem i tävlingsområdet.
 - Lag måste följa säkerhetsprotokollen, lag som inte följer säkerhetsprotokollen
   riskerar diskvalifikation.
 
 *Robotens säkerhet:*
-- Energihantering: Säkra batterier, säker kablage och nödstoppsfunktionalitet.
+- Energihantering: Säkra batterier, säker kablage och nödstoppfunktionalitet.
 - Mekanisk säkerhet: Inga vassa kanter, klämskador eller andra faror.
 - Farligt beteende: Lag måste rapportera potentiellt farliga robotbeteenden
   minst två veckor före tävlingen.
@@ -217,6 +217,8 @@ Lagen döms i följande kategorier:
 - #na
 - Föreställningen (ca 60% av poängen)
 - Teknisk Intervjun (ca 40% av poängen)
+#new_rule([Lag som tar hänsyn till hållbarhet kan få 10 bonus poäng.])
+
 
 Lagen skall välja ut fyra av sina robots funktioner under den tekniska intervjun. Ett sätt att välja dessa är att besvara frågorna "Vad tror vi är våra bästa tekniska, interaktions- och designlösningar?" och "Vad tror vi får oss att stå ut från dem andra lagen?". VM erbjuder även #link("https://robocup-junior.github.io/onstage/resources/teams/how_to_features.html")[denna guide] vilken kan användas som stöd. Några exempel av robotfunktioner är:
 - Rörelseförmåga
@@ -226,10 +228,11 @@ Lagen skall välja ut fyra av sina robots funktioner under den tekniska intervju
 - Manipulation av saker
 - Lokalisering och kartläggning
 
-= Originalitet och Autenticitet
-Lag som, enligt domarna, har medvetet kopierat ett annats lag robotar,kostymer eller föreställningsmoment (undantag musik) skall ges disciplinära åtgärder. Detta gäller också tidigare OnStage tävlingar. Vid otydlighet skall laget kunna uppvisa tydlig dokumentation på deras förberedelse inför tävlingen och hur de kom på iden.
 
-Lag skall informera domarna om robotkomponenter återanvänds från tidigare tävlingar. För att få poäng bör laget kunna visa att de har utvecklat och förbättrat dessa komponenter.
+= Originalitet och Autenticitet
+#new_rule([Lagen ska utveckla sitt egna framträdande med deras originella idé.]) Lag som, enligt domarna, har medvetet kopierat ett annats lag robotar, kostymer eller föreställningsmoment (undantag musik) skall ges disciplinära åtgärder. Detta gäller också tidigare OnStage tävlingar. Vid otydlighet skall laget kunna uppvisa tydlig dokumentation på deras förberedelse inför tävlingen och hur de kom på iden.
+
+Lag skall informera domarna om robotkomponenter återanvänds från tidigare tävlingar. För att få poäng bör laget kunna visa att de har utvecklat och förbättrat dessa komponenter. #new_rule([Vid frågor om återanvändning av robotkomponenter ska arrangörerna kontaktas.])
 
 = Föreställningen (ca 60% av poängen)
 OnStage-föreställningen är en möjlighet för laget att demonstrera sin design, konstruktion och de tekniska aspekterna kring sin robot eller sina robotar genom en föreställning eller uppvisning. Detta kan vara till exempel en magishow, teater, komedirutin, dans eller konstutställning. Lagen uppmuntras att vara kreativa, innovativa och att ta risker i sin användning av teknologier och material när de skapar sin föreställning.
@@ -266,31 +269,38 @@ Laget skall presentera en liveföreställning, vilket de kommer att bli bedömda
 1. Scenen skall vara 5x4 meter och domarna skall sitta längs med en av långsidorna.
 2. Kanten av scenen skall vara uppmärkt med en linje.
 3. Underlaget till scenen skall vara platt, vitt och får ej vara blank. Skarvar i underlaget får som mest skilja sig 5mm sinsemellan, lagets robot skall kunna hantera detta.
-4. Laget skall ges möjligheten att kalibrera sina robotar beroende på ljusförhållandena.
-5. Laget skall ges möjligheten att kalibrera sina robotar beroende på de magnetiska förhållandena.
+
+4. #new_rule([Laget skall ges möjligheten och komma förberedda för att kalibrera sina robotar efter förhållandena i lokalen. Exempel på saker att ta hänsyn till:
+
+- Metalldelar i scenkonstruktionen kan påverka kompassens sensoravläsningar.
+- Ljusförhållandena i lokalen kan påverka färgsensorer eller bildigenkänning.
+- Ojämna golvytor kan påverka robotarnas rörelse och stabilitet.
+- Ljudförhållandena i lokalen kan påverka ljudsensorernas avläsningar, osv.])
+
 
 För detaljer kring årets scen, se Årets Scen på sida 2.
 
 == Robotar
 1. Robotarna måste agera autonomt.
-2. Laptops, mobiltelefoner, Raspberry PI eller andra liknande enheter får användas som robotkontrollenheter.
+2. Laptops, mobiltelefoner, Raspberry PI eller andra liknande enheter får användas som #reformulation([autonoma]) robotkontrollenheter.
 3. Roboten skall vara av lagets egen konstruktion. Lagen uppmuntras att designa sin robots utstyrsel själva. Om laget använder en känd karaktär eller design skall laget respektera copyright lagar.
 4. Laget får tillhandahålla och använda sig av så många robotar som de själva vill. Robotar får vara av valfri storlek. Antalet eller storleken på robotarna ger inte nödvändigtvis mer poäng.
+5. #new_rule([Robotar som startas utanför scenen kommer inte att räknas med i bedömningen under hela framträdandet.])
 
 == Kommunikation och Navigering
 1. Robotarna tillåts och uppmuntras att kommunicera sinsemellan under föreställningen. Tillåtna kommunikationsmedel är infrarött (IR), Bluetooth (LE och Classic), RFID, Zigbee och andra navigerings plattformar.
-2. #highl([Ingen kommunikation får ske mellan enheter på och av scenen.])
+2. Ingen kommunikation får ske mellan enheter på och av scenen.
 3. Laget har ett ansvar att robotens kommunikationsfunktioner inte stör något annat lags robotar då de övar eller genomför sin föreställning.
 4. #na
 5. Laget skall vara förberedda på att hantera störningar på de olika kommunikationssätten, både före och under föreställningen.
-6. Vid användning av navigeringsfyr eller markeringar skall dessa vara placerade på scenen.
+6. Vid användning av navigeringsfyrar eller markeringar skall dessa vara placerade på scenen.
 
 == Sceneri
-1. Interaktiv rekvisita kan användas för att förhöja föreställningen.
+1. #reformulation([Rekvisita är valfritt för framträdandet. Lag får lägga till rekvisita i sitt framträdande, inklusive interaktiv rekvisita, för att förhöja föreställningen.])
 2. Rekvisita ses som “interaktiv” om den:
-  - interagerar med roboten via sensorer (monterade på roboten eller på rekvisitan)
+  - interagerar med roboten via sensorer (#new_rule([monterade på roboten eller på rekvisitan]))
   - interagerar med roboten via kommunikation
-3. Robotar får använda sig av statisk rekvisita för att utlösa vissa mönster eller beteenden så länge dessa är utplacerade på scenen.
+3. #new_rule([All rekvisita ska vara på scenen.])
 4. #na
 
 == Robotars Autonomi och Interaktion
@@ -308,9 +318,10 @@ För detaljer kring årets scen, se Årets Scen på sida 2.
 
 == Poängavdrag
 1. Se poängbladet för möjliga poängavdrag.
-2. Ingen robotinteraktion eller rörelse som sker utanför scenen är poänggivande, det skall ej heller ge poängavdrag.
-3. #na
-4. #na
+2. #new_rule([Robotar som startas utanför scenen kommer inte att räknas med i bedömningen under hela framträdandet.])
+3. Ingen robotinteraktion eller rörelse som sker utanför scenen är poänggivande, det skall ej heller ge poängavdrag.
+4. #new_rule([Mänskliga lagmedlemmar som använder en beröringsbaserad sensor under framträdandet kommer det att betraktas som fjärrstyrd interaktion och därmed räknas som en oplanerad mänsklig interaktion.])
+5. #new_rule([Vid framträdande som bryter mot reglerna får domarna avbryta bedömning och ge laget inga poäng.])
 
 == Förberedelser inför föreställning
 1. Det är laget ansvar att tillse att deras musik/multimedia presentation spelas upp på ett korrekt sätt under deras föreställning genom samverkan med scenteknikern.
@@ -321,14 +332,14 @@ För detaljer kring årets scen, se Årets Scen på sida 2.
 2. Varje lag som övar på scenen har som ansvar att städa efter sig. Det lag som övar sist innan bedömningarna börjar ansvarar för att det är rent, detta skall vara färdigt minst 10 minuter innan start.
 
 == Innehåll
-1. Föreställningar får ej innehålla våldsamt, militärt, hotande eller brottsligt innehåll. Detta inkluderar olämpligt eller kränkande ord, bilder eller musik.
+1. Föreställningar får ej innehålla våldsamt, militärt, hotande, brottsligt, stötande eller diskriminerande innehåll som riktar sig mot någon grupp av människor eller någon kultur. Detta inkluderar olämpligt eller kränkande ord, bilder eller musik.
 2. Deltagare skall försiktigt överväga sina ordval och de meddelanden som kommuniceras under sin föreställning. 
 3. Ett lag vars föreställning anses vara olämplig eller kränka någon annan grupp skall åtgärda detta innan de får genomföra sin föreställning. Lag som vill klargöra teman eller innehåll i sin föreställning skall göra detta med domarna innan sitt uppträdande. Lag som har olämpligt eller kränkande innehåll i sin föreställning skall ges disciplinära åtgärder.
 
 == Säkerhet
 1. #na
 2. Robotarna ska byggas så att de kan hanteras av laget själva. Laget ska kunna lyfta upp och ned sina robotar från scenen.
-3. Flygande robotar/drönare skall befinna sig innanför ett skyddsnät då de flyger eller vara knutet till ett föremål som väger mer än vad roboten klarar att lyfta. Säkerhetsnätet eller repet ska vara tillverkat av ett material som inte skadas av roboten och förhindrar roboten från att lämna scenen under föreställningen. Fritt flygande drönare är inte tillåtna i tävlingshallen. #highl([Lag som vill använda sig av flygande drönare ska ha fått tillstånd av tävlingens huvuddomare innan tävlingens start.])
+3. Flygande robotar/drönare skall befinna sig innanför ett skyddsnät då de flyger eller vara knutet till ett föremål som väger mer än vad roboten klarar att lyfta. Säkerhetsnätet eller repet ska vara tillverkat av ett material som inte skadas av roboten och förhindrar roboten från att lämna scenen under föreställningen. Fritt flygande drönare är inte tillåtna i tävlingshallen. Lag som vill använda sig av flygande drönare ska ha fått tillstånd av tävlingens huvuddomare innan tävlingens start.
 4. Föreställningar får ej innehålla projektiler, explosioner, rök, eld, vatten eller andra farliga ämnen. Kontakta tävlingsarrangören om ni är osäkra på om något ni vill använda är tillåtet.
 5. Ett lag vars rutin innehåller någon situation som kan uppfattas som farlig, inklusive möjligheten att skada scenen, skall skicka in en rapport om detta minsta 2 veckor innan tävlingens start till tävlingsanordnaren. Lag som inte följer detta skall ej tillåtas att genomföra sin föreställning.
 
@@ -336,10 +347,11 @@ För detaljer kring årets scen, se Årets Scen på sida 2.
 Den tekniska intervjun är en intervju mellan laget och domarna, där samtliga robotar och tillhörande programmering utvärderas utefter de tekniska kriterierna. Kreativa och tekniskt innovativa funktioner som lagen genomfört erhåller höga poäng. Domarna är intresserade av lagmedlemmarnas förståelse av den teknologi som de använt. Lagen skall uppvisa sin originalitet och autenticitet under intervjun.
 
 == Intervjuprocess
-1. Laget har upp till 20 minuter på sig att genomföra sin tekniska intervju under tävlingen. Intervjun skall genomföras mellan laget och domarna i ett separat rum från scenen.
+1. Laget har upp till #new_rule([25 minuter]) på sig att genomföra sin tekniska intervju under tävlingen. Intervjun skall genomföras mellan laget och domarna i ett separat rum från scenen.
 2. Intervjun skall genomföras av minst 2 st domare.
 3. Intervjupoängbladet skall användas av domarna för att bedöma laget prestation.
 4. Laget skall ha samtliga av sina fysiska robotsystem på plats under intervjun och kopior av sitt arbete i ett format som lätt kan kontrolleras. Detta kan inkludera källkod, CAD/CAM design, PCB design, kopplingsscheman med mera. Samtliga lagmedlemmar skall kunna svara på frågor kring deras tekniska inblandning i robotarnas design, programmering eller konstruktion.
+5. #new_rule([Laget ska vara förberedda på att genomföra en demonstration som visar att alla fyra valda funktioner fungerar som dem ska. Laget kommer under intervjun göra demonstrationen av de fyra valda funktionerna samt andra egenskaper hos robotarna. Syftet med demonstrationen är att domarna ska kunna granska hur laget utför de fyra valda funktionerna och robotens övriga funktioner.])
 
 == #na
 
@@ -355,13 +367,13 @@ Detta är något som vi inte använder oss av i Sverige för att betygsätta lag
 
 = Dömmande och Kommentarer
 == Bedömningskriterier
-1. Bedömningskriterierna och tilldelning av poäng markeras i respektive lags
-poängblad.
+1. Bedömningskriterierna och tilldelning av poäng markeras i respektive lags poängblad.
 2. #na
 
 == Sammanläggning av poäng
 1. Den totala poängen för varje lag ges av att kombinera poäng från lagets tekniska intervju och föreställning.
 2. Om flera uppvisningar genomförs så kommer den högsta poängen att räknas.
+3. #new_rule([RoboCupJunior OnStage syftar till att öka medvetenheten om och uppmuntra hållbara metoder inom robotik och teknik. För att stödja detta mål har det införts ett kriterium för hållbarhet som uppmuntrar alla deltagare att ta hänsyn till miljöpåverkan när de utvecklar sina projekt. Hållbarhet kommer att utvärderas genom samtliga bedömningskriterier under tävlingen. Till skillnad från andra bedömningskriterier som har vikt, ges det direkta bonuspoäng för hållbarhet till på ert slutgiltiga resultat. Detta innebär att varje hållbart val laget gör, från materialval till energieffektiv design, kan öka ert totala poäng och bidra till en bättre framtid.])
 
 == Domarpanelen
 1. Föreställningen skall bedömas av minst 3 stycken domare. Minst en av domarna skall ha deltagit på den tekniska intervjun.
